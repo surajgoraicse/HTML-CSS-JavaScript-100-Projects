@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Noto Sans JP", sans-serif;
+}
+body {
+  background-color: #222;
+}
+.project {
+  height: 100vh;
+}
+
+.card{
+  /* TODO: Gradient Background  */
+  background: hsla(217, 100%, 50%, 1);
+
+  background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  min-width: 470px;
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search input {
+  border: none;
+  outline: none;
+  background-color: #ebfffc;
+  color: #555;
+  padding: 15px 25px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 16px;
+  font-size: 18px;
+  flex: 1;
+}
+.search button {
+  border: none;
+  outline: none;
+  background-color: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.search button img {
+  width: 16px;
+  position: relative;
+  top: 3px;
+}
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather-info h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather-info h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.details {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+.col img {
+  width: 32px;
+}
+.line {
+  border: solid 1px #fff;
+  height: 40px;
+}
+
+
+.error{
+  display: none;
+}
+.error img{
+  margin-top: 60px;
+  height: 200px;
+}
+.error h1{
+  font-size: 25px;
+}
