@@ -19,25 +19,28 @@ button.addEventListener('click', () => {
     inp.forEach(element => {
         element.value = '';
     });
+    container.classList.toggle('active');
 
     // changing text and toggle active class
-    container.classList.toggle('active');
-    if (container.classList.contains('active')) {
-        greet_h1.innerHTML = 'Welcome Back!';
-        greet_h3.innerHTML = 'Enter your personal details to use all of site features';
-        greet_button.innerHTML = 'SIGN IN';
-        main_h1.innerHTML = 'Create Account';
-        main_h3.innerHTML = 'or use your email for registration';
-        button.innerHTML = 'SIGN UP';
-    }
-    else {
-        greet_h1.innerHTML = 'Hello, Friend!';
-        greet_h3.innerHTML = 'Register with your personal details to use all of site features';
-        greet_button.innerHTML = 'SIGN UP';
-        main_h1.innerHTML = 'Sign In';
-        main_h3.innerHTML = 'or use your email password';
-        button.innerHTML = 'SIGN IN';
-    }
+    setTimeout(() => {
+        if (container.classList.contains('active')) {
+            greet_h1.innerHTML = 'Welcome Back!';
+            greet_h3.innerHTML = 'Enter your personal details to use all of site features';
+            greet_button.innerHTML = 'SIGN IN';
+            main_h1.innerHTML = 'Create Account';
+            main_h3.innerHTML = 'or use your email for registration';
+            button.innerHTML = 'SIGN UP';
+        }
+        else {
+            greet_h1.innerHTML = 'Hello, Friend!';
+            greet_h3.innerHTML = 'Register with your personal details to use all of site features';
+            greet_button.innerHTML = 'SIGN UP';
+            main_h1.innerHTML = 'Sign In';
+            main_h3.innerHTML = 'or use your email password';
+            button.innerHTML = 'SIGN IN';
+        }
+    }, 300);
+    
 })
 
 
