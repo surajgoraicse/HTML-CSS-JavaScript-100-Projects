@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.project{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project .container{
+    height: 480px;
+    width: 750px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+
+}
+.container .greet , .container .main{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+
+}
+/* toggle animation {....*/  
+.container .greet{
+    right:0px;
+}
+.container .main{
+    left: 0px;
+}
+.container.active .greet{
+    right: 375px;
+}
+.container.active .main{
+    left: 375px;
+}
+ 
+/* ...} toggle animation*/  
+.container .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .main h1{
+    font-weight: 600;
+    font-size: 30px;
+    word-spacing: 4px;
+    margin-bottom: 15px ;
+}
+.container .main h1:hover{
+    cursor: default ;
+}
+.container .main .icons{
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 20px;
+    
+}
+.container .main .icons .icon-items:hover{
+    cursor: pointer;
+}
+.container .main .icons .icon-items{
+    display: flex;
+    padding: 7px;
+    border: solid rgb(219, 203, 203) 1px;
+    border-radius: 8px;
+}
+.container .main .icons .icon-items img{
+    height: 22px;
+}
+
+.container .main h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.container .main h3:hover{
+    cursor: default ;
+}
+.container.active .main h3{
+    display: none;
+}
+
+.container .main .input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    margin-bottom: 25px;
+}
+.container .main input.hide{
+    display: none;
+}
+.container.active .main input.hide{
+    display: block;
+}
+.container .main input{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    color: rgb(52, 51, 51);
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 8px;
+}
+.container .main input:focus{
+    border: none;
+    outline: none;
+}
+.container button{
+    margin-top: 8px;
+    padding: 7px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    background-color: #512da8;
+}
+.container .main button{
+    border: none;
+    background-color: #512da8;
+}
+.container .main button:hover{
+    background-color: #2959a7;
+}
+.container .main button:active{
+    background-color: #123b7b;
+}
+
+/* Greet part starts here */
+
+.container .greet{
+    color: #fff;
+    background: radial-gradient(circle, hsla(291, 60%, 40%, 1) 0%, hsla(240, 52%, 35%, 1) 100%);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 35px ;
+}
+.container.active .greet{
+    background: radial-gradient(circle, hsla(268, 31%, 51%, 1) 0%, hsla(240, 43%, 40%, 1) 100%);
+    border-top-left-radius: 0;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 0;
+}
+.container .greet button{
+    background-color: transparent;
+    border: solid 1px #fff;
+}
+.container .greet button:hover{
+    background-color: #2959a7;
+}
+.container .greet button:active{
+    background-color: #123b7b;
+}
+.container .greet h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.container .greet h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
